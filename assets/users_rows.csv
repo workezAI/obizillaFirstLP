@@ -1,0 +1,28 @@
+id,created_at,full_name,email,password,plan_id
+cfd87c32-23d2-4f5b-adfa-e287f9f09568,2024-10-22 18:54:34.590363+00,,vitorribeiro642003@gmail.com,$2a$10$Kpnl1Q4qR6zyoStCf9LNleGjkre3wb6N1hPJ/AanSthBl5HGNx04a,8250f881-0100-445b-bf03-29e41df41fe9
+da57ffb2-35c5-41ab-96b9-9e2016902591,2024-10-23 17:11:35.343433+00,a,a,$2a$10$FHerlr3lFITQYqW7rDwiR.8ELNL5OHH.gTkMA5nB9sU9KreRi6jci,
+ee8dcfc7-356f-40f6-b5cd-eef332e2ae6d,2024-10-23 17:07:43.748447+00,aa,aaa,$2a$10$Dm3oW3kWMhYQaRnTENbT8OXQdTuSFvbNrbVI5nMNA2IZLTs3F8m5K,
+fd61e2c4-6449-4b78-9714-777abb2face5,2024-10-23 17:41:45.117253+00,aaaa,aaaa,$2a$10$ucCAS/DVZA2hrgSFalNNyun0Gl/n6adL5W8kin/W7ixnmQTwuS8bu,
+51b33464-2e82-4c51-8c5d-9a560ca8576f,2024-10-23 17:20:12.895848+00,aaaaa,aaaaa,$2a$10$zhYLq0oLImMk5ON4nUhaaO2notxzsY2dmfGHO904dQ45D5uHRS9Em,
+953509fc-9c12-4b1a-a3a0-ed71d11bbf84,2024-10-13 20:37:50.389764+00,angelino332,anonyzango@email.com,$2a$10$PYwtsl7bDCwvC67F/X6eJuKmrL8dt5DOlBKu14Zs/V3eyrpGgI27C,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+599d63fc-11fb-474e-863b-3235f51e1dbd,2024-10-12 19:35:06.053162+00,angeloalves2,vitor.maahalo@hotmail.com,pedro1010,
+ac1ec9f9-deda-417d-9b4b-749bc150f53b,2024-10-12 19:38:36.693191+00,angeloalves3,angelomarchi04@gmail.com,$2a$10$QTcSDFCUEYQnhuHPCSnZHOA7M/0foeQrGAR66kQIiCwFqOCZQPZ7C,
+cb7e3f3a-7ec0-474f-b17f-9c668007e215,2024-10-12 20:04:35.278442+00,angeloalves4,angelomarchi@gmai.com,$2a$10$ycAoUS17sipxNRNrhWnjsuc3qMXaF9GfiKC3zK3Q5sInEjUU/11zC,
+3347a89e-f4da-4617-a501-423419dd1e5a,2024-10-12 19:58:51.523238+00,angeloalves42,angelomarchi15@gmail.com,$2a$10$9YS9wlz2KmlJUi9I/ILf4OKXL8m4d8DAC8P9zdKg4cx2N1VvgDXxK,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+e3909f4a-088e-4609-8057-b14b19158eee,2024-10-12 20:10:00.693116+00,angeloalves5,angelomarchi@gmai.ememem,$2a$10$nyJUSRPl/nQLXvR6LchU9e5DJxSrU5RYpYxTre475j7n2sgHOlW7O,
+669b56e1-c84a-461a-8bea-49c638714e65,2024-10-23 16:57:41.440843+00,b,b,$2a$10$37JO8IeCkYRt5HJJXg8Idu8XvUz9joq3I/rBKQ0yZf1Gj5BXqcfSC,
+d6e2a933-63ca-4161-8f07-e748d779cc1b,2024-10-21 23:34:02.041786+00,eueu,eueu,$2a$10$eO0FU6IYZ/wei7GyxRjG...A2hpb8NcU6Zf5QhHhdZfxPCZlaXss6,
+31530fb3-4a00-42c9-b13b-bb7330584641,2024-10-23 13:34:40.439593+00,jujuba,jujuba,$2a$10$9vEkPDRz.Mo5P9cIFcXKjO0IJnkkbIoLv1Y4SNhyQt3iYBukMZeYO,
+dc82eb0a-2378-44cd-abaf-dba4c68b347a,2024-10-13 22:05:45.383324+00,jujuvbas,angelomarchi2947@gmail.com,$2a$10$cZ2G23UDBYsYUkmTrmtGvuVW7popfOmL2TBLrxxYjGFcdvhGLZRMi,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+aac94be2-4087-4a76-b501-299645d9950a,2024-10-16 18:36:02.855959+00,salve,cu@gmail.com,$2a$10$WHSLMAHl4A35pJaNP7TxHeNBOwsz5KYbZfoQx/k5fNlWcmAdHZOcK,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+4872a93c-ffa8-49c0-851d-cac637fef21b,2024-10-16 18:42:41.127109+00,ss,ss,$2a$10$ffCv1tBbbNJzLzGgi/CuV.KhA2fntc9jEJ8Vc6rEqAYbMrw6niFrS,5cb35659-f229-46b8-9d39-efd6c4b877ee
+1a62b601-04dd-40cf-bce0-8dc01b1f470f,2024-10-21 23:44:18.629268+00,tiago domingues,support@realaidynamics.com,$2a$10$/mvpE2hVXElbWwCCIRq6wOu.DG4nH3eVvEZ3unQFPZmkGhaictiHi,8250f881-0100-445b-bf03-29e41df41fe9
+c7ef353a-e735-4207-892c-6d5d62521c9d,2024-10-16 02:42:06.974979+00,Vinicius Rampaneli Toniolli,workezhouse@gmail.comz,workezhouse@gmail.com,5cb35659-f229-46b8-9d39-efd6c4b877ee
+39778cae-a975-4fd3-a7de-c0e95c222967,2024-10-14 21:24:12.376829+00,Vinicius Rampaneli Toniolli,workezhouse@gmail.com,01234567890,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+60aa369a-ea60-4e20-9229-cd1fe432ea5b,2024-10-23 22:26:00.167135+00,,porrinhaLoka@gmail.com,porra123,
+d79786ab-4e06-4fdd-a746-7d16524ff7c3,2024-10-14 14:57:05.401933+00,,angelomarchi55@gmail.com,$2a$10$TzPxIYB2bZDS58.RkO1ijOJ4fcBVyRLxEOjQgs7fdSLmpIfIEUVsO,
+d68be71d-ffa5-4a67-aba8-09c86d34d9e4,2024-10-13 20:26:54.930918+00,,angelomarchi01@gmail.com,$2a$10$cukhcZLzs3X/Zf0TIFccSuC.Tqeau9HcxVCovFiVdXkDx3lmyZ7/2,
+305f589b-045d-4e56-8fe7-9e2e518c343c,2024-10-16 13:26:24.630058+00,,teste,$2a$10$M0j5iG68uZ5J/80.dne8OeeR/8.4nIDr3feTg.UUzGRSE1A6zS5fC,
+b46a33d4-2176-41f5-9355-598b49310380,2024-10-13 22:02:40.637045+00,,angelomarchi297@gmail.com,$2a$10$.2aAuy56rZrJ6uQ4nPnTf.VaEWiBp2UTCKUJfvNg0dqcB1lXfnt6i,5f2a7a2c-26f5-4844-842e-edacc2a5f32b
+86368ad7-71fc-4c15-8d95-b4760c48e427,2024-10-23 22:24:35.885756+00,,odsafkoa@gmail.com,123abc,
+2020e040-0d9c-40f7-9807-ef22675a9fef,2024-10-14 03:15:35.751312+00,,aminayad56@gmail.com,$2a$10$Zn5IAvUtM7HqyW9YyvjPGe.NFFnzqx7jC3ZwEVz9q8Mqm/GOsKDAW,

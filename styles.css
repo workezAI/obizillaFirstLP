@@ -1,0 +1,724 @@
+* {
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+   
+  }
+  
+  html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+html::-webkit-scrollbar-button {
+  display: none; 
+}
+p{
+
+  color: #BBBBBB;
+}
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #viewerSection{
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 0px 0px 12px 0px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+  }
+
+  .container {
+    overflow-y: scroll; /* Ensure the div can be scrolled */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgb(66, 66, 66)  transparent; /* For Firefox */
+  }
+  
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  .container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    border-radius: 10px;
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: #eee; /* Track color */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px; /* Try increasing this value */
+  }
+  
+
+  .container::-webkit-scrollbar-thumb:hover {
+    background-color: #777; 
+   }
+
+   
+
+
+  #chatArea{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    
+  }
+
+  #chatArea, .input-wrapper{
+    max-width: 738px;
+    justify-self: center;
+  }
+ .user-message {
+    justify-content: end;
+  }
+
+  .user-message .text {
+    padding: 10px 20px;
+    border-radius: 24px;
+    color: black;
+    background-color: white;
+  } 
+
+  .bot-response{
+    color: white;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(8,8,8,1) 20%, rgba(57,74,163,1) 100%);
+    }
+
+    
+    
+  .user-message,
+  .bot-response {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 1px;
+  }
+  
+  .bot-response .text {
+    width: 100% !important;
+    background-color: #080808;
+    border-radius: 24px;
+    box-sizing: border-box; 
+    padding: 20px 24px;
+}
+
+
+  .bot-response .text p{
+    color: #E3E3E3;
+  }
+
+  
+
+
+/*   .bot-response {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #394AA3;
+    color: white;
+    padding: 20px 20px 20px 30px;
+    border-radius: 21px 21px 0 0;
+    border-bottom: none;
+    background: linear-gradient(357deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    backdrop-filter: blur(10px);
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+
+
+  
+  textarea {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+    resize: none;
+    overflow: auto !important;
+    font-size: 11px
+  }
+  
+  textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Para dispositivos móveis, limitamos a altura máxima */
+  @media (max-width: 768px) {
+    textarea {
+      max-height: 250px;
+      /* Altura reduzida para dispositivos móveis */
+      overflow-y: auto;
+      /* Permite rolagem vertical quando o conteúdo exceder */
+    }
+  }
+
+
+  
+  
+
+  
+  .mascote {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 1rem;
+  }
+  
+  
+
+  
+  
+
+  
+  .user-message .text,
+  .bot-response .text {
+    text-align: start;
+    line-height: 28px;
+    word-wrap: break-word;
+    font-size: 16px;
+  }
+  
+ 
+  
+  .icon.md.hydrated {
+    color: white;
+  }
+  
+ 
+  
+  .bot-response h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .bot-response h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .bot-response ul,
+  .bot-response ol {
+    margin-left: 20px;
+  }
+  
+  .bot-response li {
+    margin: 8px;
+  }
+  
+  .bot-response strong {
+    font-weight: bold;
+  }
+  
+
+  
+
+  
+  .user-message .icon,
+  .bot-response .icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .bot-response .icon {
+    background-image: url('../imgs/obizilla-favicon-1-17.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo do input fixo ao final */
+  .input-wrapper {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1px;
+    margin: 0px 10px 16px 10px;
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(46,46,46,1) 0%, rgba(65,65,65,1) 100%);
+      width: calc(100% - 20px); 
+    box-sizing: border-box; 
+}
+
+  .chatinput-container{
+    cursor: text;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #080808;
+    padding: 14px;
+    border-radius: 24px;
+
+
+  }
+  .input-container {
+    cursor: text;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #080808;
+    border-radius: 24px;
+    margin-bottom: 12px;
+  }
+  
+  input {
+    flex: 1;
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  ion-icon {
+    font-size: 35px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  #userInput {
+/*     max-height: 140px;
+ */    overflow-y: auto;
+    resize: none;
+    height: 100%;
+    font-size: 16px;
+  }
+  #sendButton{
+    cursor: pointer;
+  }
+  /* Estilo de rolagem (parecido com o ChatGPT) */
+  .chat-area::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #userInput::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #userInput::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  #userInput::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  .chat-area::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  .chat-area::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  .loading {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading .dot {
+    margin-top: 15px;
+    width: 8px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  .loading .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    to {
+      opacity: 0.3;
+      transform: translateY(-5px);
+    }
+  }
+
+
+
+
+/*   Funnel Start */
+
+#funnelsViewer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.quizLayout{
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    padding: 36px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.quizLayout .cardTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+/* General styles */
+.input-container {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 16px 16px;
+  background-color: #080808;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #02F;
+}
+
+/* Label styles */
+label {
+  user-select: none;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #A1A1A1;
+  /* Default color */
+  background-color: #080808;
+  padding: 0 5px;
+  transition: 0.3s ease;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.form{
+  margin-top: 32px;
+}
+
+/* Change label to blue only while focused */
+.input-container:focus-within label {
+  top: -10px;
+  font-size: 12px;
+  color: #02F;
+  /* Blue color when focused */
+}
+
+/* Keep label position above when input has text, but set color back to white after focus is lost */
+input:not(:placeholder-shown)+label {
+  top: -10px;
+  font-size: 12px;
+  color: white;
+  /* White color when filled but not focused */
+}
+
+.error {
+  border-color: #CF6679 !important; /* Change input border color */
+  color: #CF6679 !important; /* Change label color */
+}
+
+
+.btn-primary {
+  user-select: none;
+  width: 100%;
+  color: white;
+  height: auto;
+  border-radius: 7px;
+  padding: 18px 0px;
+  font-weight: 400;
+  border: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  background: var(--BlueAccent, radial-gradient(116.62% 46.89% at 61.51% 89.25%, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 48%, rgba(255, 255, 255, 0.00) 100%), #02F);
+
+  /* Apply transition to all properties */
+  transition: all 0.6s ease;
+
+  
+}
+
+.btn-primary:hover{
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Plans Section */
+
+
+#offerPlans{
+  width: fit-content !important;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.flex-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .flex-plans{
+    width: min-content;
+  }
+}
+
+.container-planos {
+  width: 340px;
+  background: radial-gradient(81.08% 139.46% at 47.43% 100%, rgba(57, 74, 163, 0.04) 0%, rgba(0, 255, 240, 0.00) 100%), rgba(255, 255, 255, 0.01);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  border: solid 1px #161C3D;
+  border-radius: 9px;
+
+
+}
+
+.planoDestaque {
+  background: radial-gradient(81.08% 139.46% at 47.43% 100%, rgba(57, 74, 163, 0.04) 0%, rgba(0, 255, 240, 0.00) 100%), #0A0A0A;
+
+}
+
+.container-planos-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 236px;
+
+  h2 {
+    margin: 0px;
+    font-weight: 600;
+  }
+}
+
+.planos-maininfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.plans-featbenf {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.icon-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  color: black;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 0px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 17px;
+}
+
+.plansSubscribe {
+  margin-top: 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.pSub-white {
+
+
+  background: radial-gradient(116.62% 46.89% at 61.51% 89.25%, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 48%, rgba(255, 255, 255, 0.00) 100%), #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(143, 143, 143, 0.1);
+}
+
+
+.pSub-highlight {
+  color: white;
+
+  background: var(--BlueAccent, radial-gradient(116.62% 46.89% at 61.51% 89.25%, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 48%, rgba(255, 255, 255, 0.00) 100%), #02F);
+  box-shadow: 0px 4px 4px 0px rgba(0, 114, 245, 0.08);
+}
+
+.pSub-black {
+  border-radius: 9999px;
+  border: 1px solid #545454;
+  color: white;
+  background: radial-gradient(116.62% 46.89% at 61.51% 89.25%, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 48%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.08);
+
+}
+
+
+.ghost {
+  display: none !important;
+}
+
+.value-flex {
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+.value-flex p {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  gap: 5px;
+}
+.value-flex p strong {
+  line-height: 100%;
+  margin-right: 5px;
+}
+
+.size {
+  font-size: 40px;
+}
+
+
+  /* Para dispositivos móveis, limitamos a altura máxima */
+  @media (max-width: 470px) {
+
+    #offerPlans{
+      width: 100% !important;
+      padding: 0px
+    }
+    .flex-plans{
+      width: 100%;
+
+    }
+    .container-planos {
+      width: 100%;
+      
+    }
+  }
+  
+  
+  /* OVERFLOW */
+
+  #firstOverflow{
+
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -75%);
+
+    position: absolute;
+    display: flex;
+color: #444444;    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .firstOverflow h5{
+    text-align: center;
+  }

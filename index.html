@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Obizilla</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/obizilla favicon 1.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <div id="firstOverflow">
+      <img src="./assets/obiLogo.png">
+      <h5> IA Privada e sem restrições      </h5>
+    </div>
+    <section id="viewerSection" >
+      <div class="container">
+        <!-- Área do chat -->
+        <div id="chatArea" class="chat-area"></div>
+      </div>
+
+      <div class="input-wrapper">
+        <div class="chatinput-container">
+          <textarea
+            id="userInput"
+            placeholder="Pergunte qualquer coisa"
+            rows="1"
+          ></textarea>
+          <svg
+            id="sendButton"
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.729248 12.7181L13.7292 6.71814L0.729248 0.71814L0.729248 5.33352L9.39592 6.71814L0.729248 8.10276L0.729248 12.7181Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funnel Starts  -->
+    <section id="funnelsViewer" class="ghost">
+      <!-- EMAIL -->
+      <div id="collectEmail" class="quizLayout">
+        <div class="cardTitle">
+          <h1>Crie uma conta para continuar</h1>
+          <p>Não se preocupe, seus dados são 100% criptografados</p>
+        </div>
+        <div class="form">
+          <div class="input-container">
+            <input
+              id="email"
+              placeholder=""
+              type="email"
+              required
+              class="form-control"
+            />
+            <label for="email">Email*</label>
+          </div>
+          <button class="btn btn-primary" id="collectEmail_button">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!-- EMAIL END -->
+
+      <!-- PASSWORD -->
+      <div id="collectPassword" class="quizLayout" style="display: none">
+        <div class="cardTitle">
+          <h5
+            id="previewEmail"
+            style="font-weight: 500; margin-bottom: 12px; cursor: pointer"
+          >
+            <img src="./assets/backarrow.svg" />
+          </h5>
+          <h1>Defina uma senha para continuar</h1>
+        </div>
+        <div class="form">
+          <div class="input-container">
+            <input
+              id="password"
+              placeholder=""
+              type="password"
+              required
+              class="form-control"
+            />
+            <label for="password">Senha*</label>
+          </div>
+          <div class="input-container">
+            <input
+              id="password_confirm"
+              placeholder=""
+              type="password"
+              required
+              class="form-control"
+            />
+            <label for="password_confirm">Confirmar Senha*</label>
+          </div>
+          <button class="btn btn-primary" id="collectPassword_button">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!-- PASSWORD END -->
+
+      <!-- PLANS -->
+      <div id="offerPlans" class="quizLayout" style="display: none">
+        <div class="cardTitle">
+          <h1>Escolha seu plano</h1>
+        </div>
+        
+        <div class="plans">
+
+          <div class="flex-plans">
+            <div class="container-planos">
+              <div class="container-planos-text">
+                <div class="planos-maininfo">
+                  <h2>Basic</h2>
+                  <p>
+                    Tudo o que você precisa para começar com uma IA poderosa e
+                    sem censura.
+                  </p>
+                </div>
+                <div class="plans-featbenf">
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (4).png" alt="" />
+                    <p>Interações 100% anônimas</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (5).png" alt="" />
+                    <p>Respostas poderosas sem censura</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (6).png" alt="" />
+                    <p>10 prompts / dia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="value-flex">
+                  <p>R$ <strong class="size">39,90</strong></p>
+                  <p>mensalmente</p>
+                </div>
+                <button
+                id="basicPlan"
+                  class="plansSubscribe pSub-white"
+                >
+                  Assinar
+                </button>
+
+              </div>
+            </div>
+            <div class="container-planos planoDestaque">
+              <div class="container-planos-text">
+                <div class="planos-maininfo">
+                  <h2>Gold</h2>
+                  <p>
+                    Ideal para usuários frequentes que precisam de mais dados e
+                    flexibilidade.
+                  </p>
+                </div>
+                <div class="plans-featbenf">
+                  <p>Tudo do Basic +</p>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (6).png" alt="" />
+                    <p>100 prompts / dia</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Clip path group.png" alt="" />
+                    <p>Consulta de dados CPF, Placas</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (7).png" alt="" />
+                    <p>Suporte prioritário</p>
+                  </div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="value-flex">
+                  <p>R$ <strong class="size">89,90</strong></p>
+                  <p>mensalmente</p>
+                </div>
+                <button
+                id="goldPlan"
+                  class="plansSubscribe pSub-highlight"
+                >
+                  Assinar
+                </button>
+
+              </div>
+            </div>
+          
+
+        </div>
+      </div>
+      <!-- PLANS END -->
+    </section>
+
+    <script src="script.js"></script>
+
+<script src="funnel.js"></script>
+
+
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
